@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y git nodejs npm
 RUN git clone https://github.com/tngoman/Store-POS ./
 RUN rm package.json
 COPY . ./
-RUN npm install
+RUN yarn install
 RUN npx electron-builder -l build
 RUN chmod +x dist/linux-unpacked/pos
 RUN cat start.sh && chmod +x start.sh
