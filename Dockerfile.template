@@ -2,7 +2,7 @@ FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu
 
 WORKDIR /usr/src/app
 
-RUN apt install -y git
+RUN apt-get install -y git
 
 RUN git clone https://github.com/tngoman/Store-POS/blob/master/package.json ./
 RUN npm install
