@@ -1,4 +1,4 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%:ubuntu
+FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu
 
 WORKDIR /usr/src/app
 
