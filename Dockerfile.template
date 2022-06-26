@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y git nodejs npm
 RUN git clone https://github.com/tngoman/Store-POS ./
 RUN npm install
 COPY . ./
-RUN cat start.sh
+RUN cat start.sh && chmod +x start.sh
 
 # ENV UDEV=1
 
