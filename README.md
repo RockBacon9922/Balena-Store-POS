@@ -1,6 +1,11 @@
 # Balena-Store-POS
 
-Uses tngoman/Store-POS and balena to make a POS screen run on a supported balena device.
+Uses [tngoman/Store-POS](github.com/tngoman/Store-POS) and balena to make a POS screen run on a supported balena device.
+
+# Background
+
+I found balena a while ago but recently found tngoman/Store-POS and ported the project to balena.
+I feel this is an example where balena excells as it will allow IT admins to quickly and easily deploy POS machines.
 
 ## Environment variables for xserver
 
