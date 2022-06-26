@@ -11,4 +11,4 @@ RUN cat start.sh
 
 # ENV UDEV=1
 
-CMD start.sh
+CMD /usr/src/app/start.sh
