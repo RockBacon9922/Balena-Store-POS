@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 RUN apt-get update && apt-get install -y git nodejs npm
 
 RUN git clone https://github.com/tngoman/Store-POS ./
-RUN rm package.json
+RUN rm package.json package-lock.json
 COPY . ./
 RUN npm install
 RUN npx electron-builder
