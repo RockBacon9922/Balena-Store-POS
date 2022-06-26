@@ -2,7 +2,8 @@ FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:latest
 
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y git nodejs npm yarn 
+RUN apt-get update && apt-get install -y git nodejs npm
+RUN npm install -g yarn
 
 RUN git clone https://github.com/tngoman/Store-POS ./
 RUN rm package.json
