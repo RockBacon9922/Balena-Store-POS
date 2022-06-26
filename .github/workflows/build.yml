@@ -31,4 +31,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Balena Push
         run: |
-          ./balena build -f ${{secrets.BALENA_APPLICATION_NAME}}
+          ./balena build -f ${{secrets.BALENA_APPLICATION_NAME}} -A aarch64
