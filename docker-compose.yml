@@ -1,0 +1,17 @@
+version: "2.1"
+volumes:
+  x11:
+services:
+  Store-POS:
+    network_mode: host
+    build: .
+    privileged: true
+    restart: always
+    volumes:
+      - "x11:/tmp/.X11-unix"
+  xserver:
+    image: balenablocks/xserver
+    restart: always
+    privileged: true
+    volumes:
+      - "x11:/tmp/.X11-unix"
