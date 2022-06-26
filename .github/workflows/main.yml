@@ -32,4 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Balena Push
         run: |
-          ./balena push ${{secrets.BALENA_APPLICATION_NAME}}
+          ./balena push -d ${{secrets.BALENA_APPLICATION_NAME}}
